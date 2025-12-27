@@ -7,6 +7,8 @@
 |Staging Area|커밋할 파일을 준비하는 공간|택배 박스|
 |Local Repository|현재 저장소|창고|
 
+> git 상태 확인 및 세팅
+
 - git 저장소 만들기
 ```
 git init
@@ -16,6 +18,18 @@ git init
 ```
 git status
 ```
+
+- git 이력 확인하기
+```
+# 전체 로그 확인
+git log
+# 한 줄씩 간단히
+git log --oneline
+# 3줄 출력
+git log -3
+```
+
+> Staging Area 활용
 
 - git에 파일 올리는 방법
 ```
@@ -37,12 +51,7 @@ git commit
 git commit -m '{저장할 메시지}"
 ```
 
-```
-git log
-git revert <commit_id>
-```
-- 주의사항 log가 많은 경우 귀찮아짐 뒤에 숫자 "-3"등을 붙여서 확인할 최소 범위를 지정하면 확인이 편함
-- 근데 분산을 통해서 관리하는거라며? 분산이 아닌데? 그래서 등장했다 branch!!!
+
 
 ## 기타 git bash 코드
 > 폴더 생성 및 이동
@@ -68,6 +77,8 @@ vim <파일 명>
 1. 파일 작성: i 버튼
 2. 저장: esc -> :w 입력
 3. 나가기: esc -> :q 입력
+
+## git 브랜치
 
 
 ## git 설치
