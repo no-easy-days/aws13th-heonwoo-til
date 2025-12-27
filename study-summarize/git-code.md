@@ -7,20 +7,36 @@
 |Staging Area|커밋할 파일을 준비하는 공간|택배 박스|
 |Local Repository|현재 저장소|창고|
 
-
+- git 저장소 만들기
 ```
 git init
 ```
-- 파일 추가
+
+- git 저장소 상태 확인
 ```
+git status
+```
+
+- git에 파일 올리는 방법
+```
+# 특정 파일
 add {파일명}
+# 여러 파일
+add {파일명} {파일명}
+# 전체 파일
+add .
 ```
-3. commit을 통해 저장
+
+- commit에 저장하는 법
 ```
+# 메세지와 함께 커밋
 git commit -m "{저장 내용을 알기 쉽게 ex: Add: 로그인}
+# 에디터에서 상세 메시지 작성
+git commit
+# 에디터 없이 메시지 작성
+git commit -m '{저장할 메시지}"
 ```
-- commit을 통해 저장한 경우 새로운 버전이 발생한 것
-- log를 통해 이전에 저장한 commit 버전을 확인할 수 있고 로드할 수 있음
+
 ```
 git log
 git revert <commit_id>
